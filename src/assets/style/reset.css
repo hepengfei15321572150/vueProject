@@ -1,0 +1,19 @@
+@font-face {  
+	font-family: mFont;  
+	src: url('msyh.ttf');  
+} 
+
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,input,textarea,dl,dt,dd{padding:0;margin:0;-webkit-tap-highlight-color:transparent;border-width:0px;}
+html{height:100%;}
+body{height:100%;-webkit-text-size-adjust: none;font:12px/12px msyh ;color:#666;background:#fff;}
+a{text-decoration:none;-webkit-tap-highlight-color: rgba(0,0,0,0);color:#666;}
+img{vertical-align: top;border:none;}
+ul{list-style:none;}
+div{outline: none;}
+input,textarea,select{/*-webkit-appearance: none;*/-webkit-tap-highlight-color: rgba(0,0,0,0);border:none;outline: none;resize: none;}
+input,textarea{display: inline-block;width: 100%;}
+i,em{font-style: normal;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color:#9a9a9a;}
+.anchorBL{display:none;}
+
+/*禁止复制*/

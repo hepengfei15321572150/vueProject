@@ -1,0 +1,208 @@
+/* 背景颜色 */
+@bgColor1:#f5f5f5;
+@bgColor2:#f6f6f6;
+@bgColor3:#ccc;
+@bgColor4:#fff;
+@bgColor5:#1396db;
+@bgColor6:#307dcd;
+
+@bgColor5Active:#107fb9;
+
+
+
+/* 文字颜色 */
+@color1:#666;
+@color2:#fff;
+@color3:#b9b9b9;
+@color4:#434343;
+@color5:#000;
+@color6:#1396db;
+@color7:#8c8c8c;
+
+/* 边框样式 */
+//@borderColor :#b7b7b7;
+@borderColor :#ccc;
+@borderColor1 :#fff;
+@borderColor2:#C64E50;
+@borderColor3:#f6f6f6;
+@borderColor4:#1396db;
+@borderColor5:#f8f6f6;
+@borderWidth:1px;
+@borderStyle:solid;
+
+/* 行数 */
+@row:2;
+/* 圆角 */
+@borderRadius:4px;
+
+/* 字体 */
+@size12:12px;
+@size14:14px;
+@size16:16px;
+@size18:18px;
+@size20:20px;
+@lineHeight:1;
+@lineHeight1:1.5;
+@lineHeight2:2.5;
+@family:"微软雅黑";
+@fontWeight:400;
+@fontWeight700:700;
+
+/* 宽度 */
+@0:0;
+@1:1px;
+@2:2px;
+@3:3px;
+@4:4px;
+@5:5px;
+@6:6px;
+@7:7px;
+@8:8px;
+@9:9px;
+@10:10px;
+@20:20px;
+@30:30px;
+@40:40px;
+@50:50px;
+@60:60px;
+@70:70px;
+@80:80px;
+@90:90px;
+
+@L0:@0;
+@R0:@0;
+@T0:@0;
+@B0:@0;
+
+@L10:@10;
+@R10:@10;
+@T10:@10;
+@B10:@10;
+
+@L20:@20;
+@R20:@20;
+@T20:@20;
+@B20:@20;
+
+@rem0:0rem;
+@rem1:1rem;
+@rem2:2rem;
+@rem3:3rem;
+@rem4:4rem;
+@rem5:5rem;
+@rem6:6rem;
+@rem7:7rem;
+@rem8:8rem;
+@rem9:9rem;
+@rem10:10rem;
+@rem11:11rem;
+@rem12:12rem;
+@rem13:13rem;
+@rem14:14rem;
+@rem15:15rem;
+@rem16:16rem;
+
+/*通用样式*/
+.clearFix:after{
+	content:"" ;
+	display:block;
+	clear:both;
+}
+.fl(){
+	float:left;
+}
+.fr(){
+	float:right;
+}
+
+.padding(@PT:@0,@PR:@10,@PB:@0,@PL:@10){
+	padding:@arguments;
+};
+.PT(@PT:@0){
+	padding-top: @PT;
+}
+.PR(@PR:@0){
+	padding-right: @PR;
+}
+.PB(@PB:@0){
+	padding-bottom: @PB;
+}
+.PL(@PL:@0){
+	padding-left: @PL;
+}
+
+.marginAuto(@MT:@0,@MR:auto,@MB:@0,@ML:auto){
+	display:block;
+	margin:@arguments;
+};
+
+.margin(@MT:@0,@MR:@0,@MB:@0,@ML:@0){
+	margin:@arguments;
+}
+.MT(@MT:@0){
+	margin-top:@MT;
+}
+.MR(@MR:@0){
+	margin-right:@MR;
+}
+.MB(@MB:@0){
+	margin-bottom:@MB;
+}
+.ML(@ML:@0){
+	margin-left:@ML;
+}
+
+
+.border(@width:@borderWidth,@style:@borderStyle,@color:@borderColor){
+	border:@arguments;
+}
+.BT(@width:@borderWidth,@style:@borderStyle,@color:@borderColor){
+	border-top:@arguments;
+}
+.BR(@width:@borderWidth,@style:@borderStyle,@color:@borderColor){
+	border-right:@arguments;
+}
+.BB(@width:@borderWidth,@style:@borderStyle,@color:@borderColor){
+	border-bottom:@arguments;
+}
+.BL(@width:@borderWidth,@style:@borderStyle,@color:@borderColor){
+	border-left:@arguments;
+}
+
+.borderRadius(@radius:@borderRadius){
+	border-radius:@radius;
+}
+
+.textOverflows(@row:@row){
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: @row;
+	-webkit-box-orient: vertical;
+}
+.textOverflow(){
+    overflow : hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.font(@fontWeight:@fontWeight,@size:@size,@lineHeight:@lineHeight,@family:@family){
+	font:@fontWeight @size/@lineHeight @family;
+}
+.fontSize(@size:@size){
+	font-size:@size;
+}
+.fontLineHeight(@lineHeight:@lineHeight){
+	line-height:@lineHeight;
+}
+.fontWeight(@fontWeight:@fontWeight){
+	font-weight:@fontWeight;
+}
+.fontFamily(@family:@family){
+	font-family:@family;
+}
+
+
+.boxSizing{
+	box-sizing: border-box;
+}

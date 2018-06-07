@@ -1,0 +1,16 @@
+/* 背景颜色 */
+/* 文字颜色 */
+/* 边框样式 */
+/* 行数 */
+/* 圆角 */
+/* 字体 */
+/* 宽度 */
+/*通用样式*/
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.boxSizing {
+  box-sizing: border-box;
+}

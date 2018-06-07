@@ -1,28 +1,62 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
-  </div>
+	<div id="app">
+		<router-view></router-view>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	data(){
+		return{
+			
+		}
+	}
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import './assets/style/reset.css';
+
+
+*{
+	padding: 0;
+	margin:0;	
+}
+ul{
+	list-style: none;
+}
+body{
+	font:12px/12px "微软雅黑";
+}
+.clearfix:after{
+	display: block;
+	content: "";
+	clear:both;
+}
+
+
+body,html{
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+#app>div{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+#app,#wrap_box{
+	position: fixed;
+	left:0;
+	top:0;
+	right: 0;
+	bottom:0;
+	z-index:1;
+	background: #fff;
+}
+#wrap_box{
+	overflow: auto;
+	-webkit-overflow-scrolling : touch;
 }
 </style>
